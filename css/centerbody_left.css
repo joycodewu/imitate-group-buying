@@ -1,0 +1,109 @@
+a{
+    list-style: none;
+    text-decoration: none;
+}
+*{margin:0;
+padding: 0;}
+.centerbody{
+    margin: 10px;
+    width: 1190px;
+    height: 427px;
+    /* background-color:blanchedalmond */
+}
+.centerbody_left{
+    height: 473px;
+    width: 228px;
+    background-color: white;
+    border: 1px solid #E5E5E5;
+}
+.centerbody_left span:first-child{
+    color: #222;
+    font-size: 18px;
+    font-weight: 700;
+    height:50px;
+    line-height: 50px;
+    margin-left: 15px;
+}
+#dropright{
+    position: relative;
+}
+#dropright li{
+    list-style: none;
+    width: 218px;
+    height: 22px;
+    padding: 2px 0px 2px 12px;
+}
+#dropright .icon_earth::before{
+    content: "\e9a3";
+}
+#dropright li span{
+    font-size: 13px;
+    line-height: 22px;
+    color: #646464;
+    cursor: pointer;
+}
+#dropright li b{
+    position: absolute;
+    right: 13px;
+    color: #646464;
+    font-weight: 100;
+    cursor: pointer;
+}
+#dropright li>div{
+    width: 400px;
+    height: 400px;
+    /* background-color:#E5E5E5; */
+    position: absolute;
+    top: 0px;
+    left: 228px;
+}
+#dropright li .allsort_displaynone div:nth-child(1){
+    padding-bottom:10px;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 90%;
+    height: 33px;
+    /* background-color: aqua; */
+    border-bottom:1px solid #E5E5E5 ;
+    position: relative;
+} 
+#dropright li .allsort_displaynone div:nth-child(1) a{
+    line-height:33px ;
+    color: #222;
+}
+#dropright li .allsort_displaynone div:nth-child(1) a:first-child{
+    font-size:18px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 5px;
+}
+#dropright li .allsort_displaynone div:nth-child(1) a:last-child{
+    font-size:8px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+#dropright li .allsort_displaynone div:nth-child(2){
+    padding-bottom:10px;
+    margin: 0 auto;
+    width: 90%;
+    height: 33px;
+    /* background-color: aqua; */
+    /* border-bottom:1px solid #E5E5E5 ; */
+    position: relative;
+} 
+#dropright li .allsort_displaynone div:nth-child(2) a{
+    margin:10px 16px 0px 0px;
+    color: #222;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+/* 左侧隐藏 */
+.allsort_displaynone{
+    display: none;
+}
+
+#dropright .show .allsort_displaynone{
+    display:block;
+}

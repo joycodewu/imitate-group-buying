@@ -63,25 +63,28 @@ a{
     width: 80px;
     height: 160px;
     /* background-color: aqua; */
-    position: absolute;
     top: 40px;
     left: 58px;
     /* display: block; */
     border: 1px solid #ccc;
     border-top:none;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
 }
 /* 以下为网站导航块 */
 #dropdown li div{
     width: 860px;
     height: auto;
-    /* background-color: aqua; */
-    position: absolute;
     padding: 30px 16px 36px 47px;
     top: 40px;
     right: 0px;
     /* display: block; */
     border: 1px solid #ccc;
     border-top:none;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
 }
 #dropdown li div dl{
     width: 245px;
@@ -135,10 +138,7 @@ a{
 #dropdown .show .displaynone{
     display: block;
 }
-
 #dropdown .show a:hover{
     color: #FE8C00;
-    border-left:1px solid #ccc ;
-    border-right:1px solid #ccc ;
     display: block;
 } 
