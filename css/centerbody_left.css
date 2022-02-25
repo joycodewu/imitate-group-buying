@@ -12,7 +12,7 @@ padding: 0;}
 }
 .centerbody_left{
     height: 473px;
-    width: 228px;
+    width: 232px;
     background-color: white;
     border: 1px solid #E5E5E5;
 }
@@ -106,4 +106,12 @@ padding: 0;}
 
 #dropright .show .allsort_displaynone{
     display:block;
+}
+
+#dropright .show .allsort_displaynone a:hover{
+    color: #FE8C00;
+    /* display: block; */
+} 
+#dropright .show:hover{
+    border: 1px solid #999;
 }
