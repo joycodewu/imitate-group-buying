@@ -5,10 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./js/test.js"></script>
 </head>
-<body>
-    <div class="ceterbody-center">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .maoyan-box{
+        width: 1210px;
+        height: 380px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border: 1px solid rgb(251,63,93);
+    }
+    .maoyan-box .maoyan-box-top{
+        width: 100%;
+        height: 44px;
+        background-color:rgb(251,63,93);
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    .maoyan-box .maoyan-box-top ul{
+        list-style: none;
+    }
+    .maoyan-box .maoyan-box-top li{
+        font-size: 14px;
+        float: left;
+        line-height: 44px;
+        padding: 0 5px;
+        cursor: pointer;
+        color: #fff;
+        position: relative;
+    }
+    .maoyan-box .maoyan-box-top li:nth-child(1){
+        font-size: 18px;
+        margin-left: 13px;
+        margin-right:10px;
+        font-family: 微软雅黑;
+    }
+    .maoyan-box .maoyan-box-top li div{
+        height: 0;
+        width: 0;
+        border: 7px solid #fff;
+        border-top: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #fff;
+        border-left: 7px solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 24.5px;
+        display: none;
+    }
+    /* 正在热映下的小三角默认状态是显示的 */
+    .maoyan-box .maoyan-box-top li:nth-child(2) div{
+        display: block;
+    }
 
+    .maoyan-box #maoyan-box-body{
+        background-color:aquamarine;
+        width: 100%;
+        height: 336px;
+        position: relative;
+    }
+    .maoyan-box #maoyan-box-body #maoyan-left{
+        display: none;
+        width: 40px;
+        height: 40px;
+        background-color: #222;
+        opacity: 0.8;
+        border-radius: 50%;
+        line-height: 35px;
+        text-align: center;
+        font-size: 30px;
+        color: #eee;
+        position: absolute;
+        top: 170px;
+        left: 15px;
+        cursor: pointer;
+    }
+    .maoyan-box #maoyan-box-body #maoyan-right{
+        display: none;
+        width: 40px;
+        height: 40px;
+        background-color: #222;
+        opacity: 0.8;
+        border-radius: 50%;
+        line-height: 35px;
+        text-align: center;
+        font-size: 30px;
+        color: #eee;
+        position: absolute;
+        top: 170px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+
+
+
+
+</style>
+<body>
+    <div class="maoyan-box">
+        <div class="maoyan-box-top">
+            <ul id="movie-tab">
+                <li>猫眼电影</li>
+                <li>正在热映
+                    <div class="triangle-display"></div>
+                </li>
+                <li>即将上映
+                    <div class="triangle-display"></div>
+                </li>
+            </ul>
+        </div>
+        <div id="maoyan-box-body">
+            <div id="maoyan-left">&lt;</div>
+            <div id="maoyan-right">&gt;</div>
+            <div class="moviehot" style="display: block;" id="nowhot">
+            <!-- 上述style定义了常显示的部分 -->
+                this is nowhot
+            </div>
+            <div class="moviehot" style="display: none;" id="quick">
+                this is quick
+            </div>
+        </div>
     </div>
 </body>
 </html>
