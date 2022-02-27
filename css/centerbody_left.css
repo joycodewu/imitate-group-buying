@@ -4,17 +4,25 @@ a{
 }
 *{margin:0;
 padding: 0;}
-.centerbody{
-    margin: 10px;
-    width: 1190px;
+.bodyer{
     height: 427px;
-    /* background-color:blanchedalmond */
+    width: 100%;
+    /* background-color: pink; */
+}
+.centerbody{
+    margin: 0 auto;
+    width: 1210px;
+    /* height: 427px; */
+    background-color:blanchedalmond;
+    /* float: left; */
+    position:relative;
 }
 .centerbody_left{
-    height: 473px;
+    height: 427px;
     width: 232px;
     background-color: white;
     border: 1px solid #E5E5E5;
+    float: left;
 }
 .centerbody_left span:first-child{
     color: #222;
@@ -106,6 +114,8 @@ padding: 0;}
 
 #dropright .show .allsort_displaynone{
     display:block;
+    z-index: 2;
+    background-color: #fff;
 }
 
 #dropright .show .allsort_displaynone a:hover{

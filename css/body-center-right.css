@@ -1,0 +1,69 @@
+/* 右侧顶部样式 */
+.body-center-right .bodyer-center-right-top{
+    width: 238px;
+    height: 238px;
+    border: 1px solid #e5e5e5;
+    /* background-color: pink; */
+    float: left;
+}
+.body-center-right .bodyer-center-right-top div:nth-child(1){
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/avatar.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 5px solid #e5e5e5;
+    border-radius: 50%;
+}
+.body-center-right .bodyer-center-right-top p{
+    text-align: center;
+    color: #222;
+    font-size: 16px;
+    padding: 15px 0px;
+}
+.body-center-right .bodyer-center-right-top div:nth-child(3){
+    width: 118px;
+    height: 38px;
+    border: 1px solid #e5e5e5;
+
+    border-radius: 19px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 38px;
+}
+.body-center-right .bodyer-center-right-top div:nth-child(4){
+    width: 118px;
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    border-radius: 19px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 10px;
+}
+/* 右侧底部样式 */
+.body-center-right .bodyer-center-right-bottom{
+    width: 238px;
+    height: 165px;
+    border: 1px solid #e5e5e5;
+    float: left;
+    margin-top: 12px;
+    text-align: center;
+}
+.body-center-right .bodyer-center-right-bottom div{
+    width: 95px;
+    height: 95px;
+    background-image: url("../images/download-qr.png");
+    background-size: cover;
+    margin: 0 auto;
+}
+.body-center-right .bodyer-center-right-bottom p{
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.body-center-right .bodyer-center-right-bottom span{
+    color:red;
+}

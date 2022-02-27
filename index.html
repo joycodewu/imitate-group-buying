@@ -7,11 +7,16 @@
     <title>首页</title>
     <link rel="stylesheet" href="./css/head_right.css" type="text/css">
     <link rel="stylesheet" href="./css/centerbody_left.css"  type="text/css">
-    <script src="./js/test.js"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/body-center-center.css">
+    <link rel="stylesheet" href="./css/body-center-right.css">
 </head>
 <body>
+    <!-- 顶部导航栏 -->
     <div class="nav">
         <div class="nav-center">
+            <!-- 顶部导航栏左侧 -->
             <div class="nav-center-left">
                 <span class="icon-location">
                     <a href="">北京</a>
@@ -21,6 +26,7 @@
                     <a href="">注册</a>
                 </span>
             </div>
+            <!-- 顶部导航栏右侧 -->
             <div class="nav-center-right">
                 <ul id="dropdown">
                     <!-- 到时候就在li级别上增加一个show的类名 -->
@@ -85,104 +91,181 @@
             </div>
         </div>
     </div>
-    <div class="centerbody">
-        <div class="centerbody_left">
-           <span>全部分类</span> 
-           <ul id="dropright">
-               <li>
-                   <i class="icon_earth"></i>
-                   <span>美食</span>
-                   <b>&gt;</b>
-                   <div class="allsort_displaynone">
-                       <div>
-                           <a href="">美食</a>
-                           <a href="">更多&gt;</a>
-                       </div>
-                       <div>
-                           <a href="">代金券</a>
-                           <a href="">甜点饮品</a>
-                           <a href="">火锅</a>
-                           <a href="">自助餐</a>
-                           <a href="">小吃快餐</a>
-                           <a href="">日韩料理</a>
-                           <a href="">西餐</a>
-                           <a href="">聚餐宴请</a>
-                           <a href="">烧烤烤肉</a>
-                           <a href="">东北菜</a>
-                           <a href="">川湘菜</a>
-                           <a href="">江浙菜</a>
-                           <a href="">香锅烤鱼</a>
-                           <a href="">粤港菜</a>
-                           <a href="">西北菜</a>
-                       </div>
-                   </div>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>外卖</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>酒店</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>民宿</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>猫眼电影</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>机票/火车票</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>休闲娱乐/KTV</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>生活服务</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>丽人/美发/医学美容</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>结婚/婚纱摄影/婚宴</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>亲子/儿童乐园/幼教</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>运动健身</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>家装/家居</span>
-                <b>&gt;</b>
-               </li>
-               <li>
-                <i class="icon_earth"></i>
-                <span>学习培训</span>
-                <b>&gt;</b>
-               </li>
-           </ul>
+    <!-- 头部，包括ui搜索框等等 -->
+    <div class="header">
+        <div class="head_left">
+            <h1>
+                <a href="#">
+                    <img src="./images/tuantuan.png" alt="">
+                </a>    
+            </h1>
+        </div>
+        <div class="search">
+            <input type="text" value="搜索商家或地点">
+            <button>
+                <span>搜索</span>
+            </button>
+        </div>
+    </div>
+    <!-- 中间身体总部分 -->
+    <div class="bodyer">
+    <!-- 中间身体部分 -->
+        <div class="centerbody">
+            <!-- 中间身体部分左侧导航栏 -->
+            <div class="centerbody_left">
+            <span>全部分类</span> 
+            <ul id="dropright">
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>美食</span>
+                    <b>&gt;</b>
+                    <div class="allsort_displaynone">
+                        <div>
+                            <a href="">美食</a>
+                            <a href="">更多&gt;</a>
+                        </div>
+                        <div>
+                            <a href="">代金券</a>
+                            <a href="">甜点饮品</a>
+                            <a href="">火锅</a>
+                            <a href="">自助餐</a>
+                            <a href="">小吃快餐</a>
+                            <a href="">日韩料理</a>
+                            <a href="">西餐</a>
+                            <a href="">聚餐宴请</a>
+                            <a href="">烧烤烤肉</a>
+                            <a href="">东北菜</a>
+                            <a href="">川湘菜</a>
+                            <a href="">江浙菜</a>
+                            <a href="">香锅烤鱼</a>
+                            <a href="">粤港菜</a>
+                            <a href="">西北菜</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>外卖</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>酒店</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>民宿</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>猫眼电影</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>机票/火车票</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>休闲娱乐/KTV</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>生活服务</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>丽人/美发/医学美容</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>结婚/婚纱摄影/婚宴</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>亲子/儿童乐园/幼教</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>运动健身</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>家装/家居</span>
+                    <b>&gt;</b>
+                </li>
+                <li>
+                    <i class="icon_earth"></i>
+                    <span>学习培训</span>
+                    <b>&gt;</b>
+                </li>
+            </ul>
+            </div>
+            <!-- 中间身体部分轮播图 -->
+            <div class="body-center-center">
+                <!-- 顶栏 -->
+                <div class="body-center-center-top">
+                    <a href="">美食外卖</a>
+                    <a href="">上映电影</a>
+                    <a href="">旅游酒店</a>
+                    <a href="">房屋租赁</a>
+                    <a href="">商家入驻</a>
+                    <a href="">爱心公益</a>
+                </div>
+                <div class="body-center-center-bottom">
+                     <!-- 轮播图区域 -->
+                    <div id="carousel">
+                        <a href="" id="links">
+                            <img src="" alt="" id="image">
+                        </a>
+                        <!-- 左右箭头 -->
+                        <div id="left">
+                            &lt;
+                        </div>
+                        <div id="right">
+                            &gt;
+                        </div>
+                        <!-- 数字 -->
+                        <div id="number">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="leisure"></div>
+                <div class="hotel"></div>
+                <div class="knowledge"></div>
+                <div class="business"></div>
+                </div>
+            </div>
+            <div class="body-center-right">
+                <div class="bodyer-center-right-top">
+                    <div></div>
+                    <p>Hi!你好</p>
+                    <div>注册</div>
+                    <div>立即登陆</div>
+                </div>
+                <div class="bodyer-center-right-bottom">
+                    <div></div>
+                    <p>美团APP手机版</p>
+                    <span>一元起</span>
+                    <b>吃喝玩乐</b>
+                </div>
+            </div>
         </div>
     </div>
 </body>

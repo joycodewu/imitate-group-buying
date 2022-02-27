@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none;}
+.body-center-center{
+    width: 710px;
+    height: 475px;
+    float: left;
+    margin: -50px 8px 0px 8px;
+    /* border: 1px solid red; */
+}
+.body-center-center-top{	
+    width:710px;
+    height:50px;
+    line-height: 50px;
+    background-color: fff;
+}
+.body-center-center .body-center-center-top a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 15px;
+    
+}
+.body-center-center .body-center-center-top a:first-child{
+    padding-left: 45px;
+}
+.body-center-center .body-center-center-top a:hover{
+    color: red;
+}
+/* 轮播图区域 */
+#carousel{
+    width: 550px;
+    height: 240px;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+}
+#left{
+    width: 40px;
+    height: 40px;
+    /* float: left; */
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:35px ;
+    font-size: 30px;
+    color: #eee;
+    background-color:#222 ;
+    opacity: 0.8;
+}
+#right{
+    display: none;
+    width: 40px;
+    height: 40px;
+    /* float: left; */
+    position: absolute;
+    right: 15px;
+    top: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:35px ;
+    font-size: 30px;
+    color: #eee;
+    background-color:#222 ;
+    opacity: 0.8;
+}
+#number{
+    width: 100px; ;
+    height: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 230px;
+}
+#number ul{
+    list-style: none;
+}
+#number li{
+    width: 10px;
+    height: 2px;
+    float: left;
+    margin-right: 5px;
+    background-color: #ccc;
+    opacity: 0.8;
+    font-size: 0px;
+    line-height: 2px;
+    text-align: center;
+}
+#carosel{
+    transition: all 1s;
+}
+.body-center-center .body-center-center-bottom .leisure{
+    width: 140px;
+    height: 240px;
+    background-color: pink;
+    float: right;
+    background: url("../images/aa2.jpg");
+    background-size: cover;
+}
+
+.body-center-center .body-center-center-bottom .hotel{
+    width: 270px;
+    height: 165px;
+    background-color: pink;
+    float: left;
+    margin-left: 10px;
+    margin-top: 12px;
+    background: url("../images/aa4.png");
+    background-size: cover;
+}
+.body-center-center .body-center-center-bottom .knowledge{
+    width: 270px;
+    height: 165px;
+    background-color: pink;
+    float: left;
+    margin-left: 10px;
+    margin-top: 12px;
+    background: url("../images/aa3.jpg");
+    background-size: cover;
+}
+.body-center-center .body-center-center-bottom .business{
+    width: 140px;
+    height: 165px;
+    background-color: pink;
+    float: left;
+    margin-left: 10px;
+    margin-top: 12px;
+    background: url("../images/aa5.jpg");
+    background-size: cover;
+}
