@@ -43,7 +43,58 @@ window.onload=function(){
             }
         }
     }
-
+    // 点击左右键切换图片
+    var num=0;//声明在此处的原因是num是位置标记，声明在函数内会导致从0开始定位
+    maoyanRight.onclick=function(){
+        if(nowhot.style.display=="block"){
+            let movielun=setInterval(function(){
+                num-=20;
+                nowhot.style.left=num+"px";
+                if(num<=-1100){
+                    clearInterval(movielun);
+                    maoyanRight.disabled=true;
+                    maoyanLeft.disabled=false;
+                }
+            },20);
+        }
+        else{
+            let movielun=setInterval(function(){
+                num-=20;
+                console.log(num)
+                quick.style.left=num+"px";
+                if(num<=-1100){
+                    clearInterval(movielun);
+                    maoyanRight.disabled=true;
+                    maoyanLeft.disabled=false;
+                }
+            },20)
+        }
+    }
+    maoyanLeft.onclick=function(){
+        if(nowhot.style.display=="block"){
+            let movielun=setInterval(function(){
+                num+=20;
+                nowhot.style.left=num+"px";
+                if(num>=0){
+                    clearInterval(movielun);
+                    maoyanLeft.disabled=true;
+                    maoyanRight.disabled=false;
+                }
+            },20);
+        }
+        else{
+            let movielun=setInterval(function(){
+                num+=20;
+                // console.log(num)
+                quick.style.left=num+"px";
+                if(num>=0){
+                    clearInterval(movielun);
+                    maoyanLeft.disabled=true;
+                    maoyanRight.disabled=false;
+                }
+            },20)
+        }
+    }
 
 
 }
