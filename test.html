@@ -6,172 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./js/test.js"></script>
+    <link rel="stylesheet" href="./css/test.css">
 </head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    .maoyan-box{
-        width: 1210px;
-        height: 380px;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-        border: 1px solid rgb(251,63,93);
-        z-index: 2;
-    }
-    .maoyan-box .maoyan-box-top{
-        width: 100%;
-        height: 44px;
-        background-color:rgb(251,63,93);
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-    }
-    .maoyan-box .maoyan-box-top ul{
-        list-style: none;
-    }
-    .maoyan-box .maoyan-box-top li{
-        font-size: 14px;
-        float: left;
-        line-height: 44px;
-        padding: 0 5px;
-        cursor: pointer;
-        color: #fff;
-        position: relative;
-    }
-    .maoyan-box .maoyan-box-top li:nth-child(1){
-        font-size: 18px;
-        margin-left: 13px;
-        margin-right:10px;
-        font-family: 微软雅黑;
-    }
-    .maoyan-box .maoyan-box-top li div{
-        height: 0;
-        width: 0;
-        border: 7px solid #fff;
-        border-top: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-bottom: 7px solid #fff;
-        border-left: 7px solid transparent;
-        position: absolute;
-        bottom: 0;
-        left: 24.5px;
-        display: none;
-    }
-    /* 正在热映下的小三角默认状态是显示的 */
-    .maoyan-box .maoyan-box-top li:nth-child(2) div{
-        display: block;
-    }
-
-    .maoyan-box #maoyan-box-body{
-        /* background-color:aquamarine; */
-        width: 100%;
-        height: 336px;
-        position: relative;
-        /* 把溢出部分隐藏写在overflow上 */
-        overflow: hidden;
-    }
-    .maoyan-box #maoyan-box-body #maoyan-left{
-        display: none;
-        width: 40px;
-        height: 40px;
-        background-color: #222;
-        opacity: 0.8;
-        border-radius: 50%;
-        line-height: 35px;
-        text-align: center;
-        font-size: 30px;
-        color: #eee;
-        position: absolute;
-        top: 170px;
-        left: 15px;
-        cursor: pointer;
-        z-index: 2;
-    }
-    .maoyan-box #maoyan-box-body #maoyan-right{
-        display: none;
-        width: 40px;
-        height: 40px;
-        background-color: #222;
-        opacity: 0.8;
-        border-radius: 50%;
-        line-height: 35px;
-        text-align: center;
-        font-size: 30px;
-        color: #eee;
-        position: absolute;
-        top: 170px;
-        right: 15px;
-        cursor: pointer;
-        z-index: 2;
-    }
-    #maoyan-box-body #nowhot{
-        position: relative;
-        width: 2390px;
-    }
-    #maoyan-box-body #nowhot img{
-        float: left;
-        margin-left: 15px;
-        margin-top:20px ;
-        z-index: -1;
-    }
-    #maoyan-box-body #quick{
-        position: relative;
-        width: 2390px;
-    }
-    #maoyan-box-body #quick img{
-        float: left;
-        margin-left: 15px;
-        margin-top:20px ;
-        z-index: -1;
-    }
-
-
-
-
-</style>
 <body>
-    <div class="maoyan-box">
-        <div class="maoyan-box-top">
-            <ul id="movie-tab">
-                <li>猫眼电影</li>
-                <li>正在热映
-                    <div class="triangle-display"></div>
-                </li>
-                <li>即将上映
-                    <div class="triangle-display"></div>
-                </li>
-            </ul>
-        </div>
-        <div id="maoyan-box-body">
-            <button id="maoyan-left">&lt;</button>
-            <button id="maoyan-right">&gt;</button>
-            <div class="moviehot" style="display: block;" id="nowhot">
-            <!-- 上述style定义了常显示的部分 -->
-                <img src="./images/mm1.jpg" alt="电影">
-                <img src="./images/mm2.jpg" alt="电影">
-                <img src="./images/mm3.jpg" alt="电影">
-                <img src="./images/mm4.jpg" alt="电影">
-                <img src="./images/mm5.jpg" alt="电影">
-                <img src="./images/mm6.jpg" alt="电影">
-                <img src="./images/mm7.jpg" alt="电影">
-                <img src="./images/mm8.jpg" alt="电影">
-                <img src="./images/mm9.jpg" alt="电影">
-                <img src="./images/mm10.jpg" alt="电影">
-            </div>
-            <div class="moviehot" style="display: none;" id="quick">
-                <img src="./images/mm11.jpg" alt="电影">
-                    <img src="./images/mm12.jpg" alt="电影">
-                    <img src="./images/mm13.jpg" alt="电影">
-                    <img src="./images/mm14.jpg" alt="电影">
-                    <img src="./images/mm15.jpg" alt="电影">
-                    <img src="./images/mm16.jpg" alt="电影">
-                    <img src="./images/mm17.jpg" alt="电影">
-                    <img src="./images/mm18.jpg" alt="电影">
-                    <img src="./images/mm19.jpg" alt="电影">
-                    <img src="./images/mm20.jpg" alt="电影">
-            </div>
-        </div>
-    </div>
+   <div class="hotel">
+       <div id="hotel_center">
+           <div class="hotel_center_nav">
+               <div>推荐民宿</div>
+               <ul id="hotel_nav_localLsit">
+                   <li>杭州</li>
+                   <li>宁波</li>
+                   <li>温州</li>
+                   <li>台州</li>
+                   <li>金华</li>
+                   <li>衢州</li>
+               </ul>
+           </div>
+           <div class="hotel_center_body">
+               <div id="hotelcontainer">
+                    <div class="hotellist">
+                <!-- 以下是各个地区的页面 -->
+                        <div>
+                        <!-- 这是第一个地区的页面 -->
+                        <a href="">
+                            <img src="./images/hh1.jpg" alt="">
+                        </a>
+                        <span>杭州地区套房</span>
+                        <p>这是杭州的房间</p>
+                        <b>666</b>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="./images/hh1.jpg" alt="">
+                            </a>
+                            <span>杭州地区套房</span>
+                            <p>这是杭州的房间</p>
+                            <b>666</b>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="./images/hh1.jpg" alt="">
+                            </a>
+                            <span>杭州地区套房</span>
+                            <p>这是杭州的房间</p>
+                            <b>666</b>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="./images/hh1.jpg" alt="">
+                            </a>
+                            <span>杭州地区套房</span>
+                            <p>这是杭州的房间</p>
+                            <b>666</b>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="./images/hh1.jpg" alt="">
+                            </a>
+                            <span>杭州地区套房</span>
+                            <p>这是杭州的房间</p>
+                            <b>666</b>
+                        </div>
+                        <div>
+                            <a href="">
+                                <img src="./images/hh1.jpg" alt="">
+                            </a>
+                            <span>杭州地区套房</span>
+                            <p>这是杭州的房间</p>
+                            <b>666</b>
+                        </div>
+                    </div>
+                    <div class="hotellist">
+                        <div>
+                            <!-- 这是第一个地区的页面 -->
+                            <a href="">
+                                <img src="./images/hh1.jpg" alt="">
+                            </a>
+                            <span>宁波地区套房</span>
+                            <p>这是宁波的房间</p>
+                            <b>666</b>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="./images/hh1.jpg" alt="">
+                                </a>
+                                <span>宁波地区套房</span>
+                                <p>这是宁波的房间</p>
+                                <b>666</b>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="./images/hh1.jpg" alt="">
+                                </a>
+                                <span>宁波地区套房</span>
+                                <p>这是宁波的房间</p>
+                                <b>666</b>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="./images/hh1.jpg" alt="">
+                                </a>
+                                <span>宁波地区套房</span>
+                                <p>这是宁波的房间</p>
+                                <b>666</b>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="./images/hh1.jpg" alt="">
+                                </a>
+                                <span>宁波地区套房</span>
+                                <p>这是宁波的房间</p>
+                                <b>666</b>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="./images/hh1.jpg" alt="">
+                                </a>
+                                <span>宁波地区套房</span>
+                                <p>这是宁波的房间</p>
+                                <b>666</b>
+                            </div>
+                    </div>
+                    <div class="hotellist">温州</div>
+                    <div class="hotellist">台州</div>
+                    <div class="hotellist">金华</div>
+                    <div class="hotellist">衢州</div>
+                </div>
+           </div>
+       </div>
+   </div>
 </body>
 </html>

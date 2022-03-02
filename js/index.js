@@ -7,6 +7,7 @@ window.onload=function(){
         // 因为2,3,4没有效果所以不添加
         if(i!==0) continue;
             droprightLi[i].onmouseover=function(){
+                // 关键部分就在于在this.classList中加入show元素
                 this.classList.add("show");
             }
             droprightLi[i].onmouseout=function(){
@@ -200,6 +201,27 @@ var maoyanBoxBody=document.getElementById("maoyan-box-body");
                     maoyanRight.disabled=false;
                 }
             },20)
+        }
+    }
+    //民宿区域JS代码
+    var local=document.getElementById("hotel_nav_localLsit");
+    var localLi=local.getElementsByTagName("li");
+    console.log(localLi);
+    var hotel=document.getElementById("hotelcontainer");
+    var hotelLi=hotel.getElementsByClassName("hotellist");
+    console.log(hotelLi);
+    for(let i=0;i<localLi.length;i++){
+        // 点中的li的变量要设置
+        // hotelLi[i].index=i;
+        console.log(hotelLi[i]);
+        localLi[i].onclick=function(){
+            for(let m=0;m<localLi.length;m++){
+                hotelLi[m].style.display="none";
+                if(m===i) hotelLi[m].style.display="flex";
+            }
+            //这一步骤是用于替代if函数的
+            // console.log(this.index);
+            // hotelLi[this.index].style.display="flex";
         }
     }
 }

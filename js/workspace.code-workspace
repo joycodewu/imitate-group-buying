@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\CSS\\轮播图"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "day08"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+		
+			{
+				"type": "pwa-chrome",
+				"request": "launch",
+				"name": "Open index.html",
+				"file": "c:\\Users\\web\\Desktop\\group_buy\\index.html"
+			}
+		]
+	}
+}
