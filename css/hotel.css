@@ -8,13 +8,13 @@ ul{
     height: 740px;
 }
 .hotel #hotel_center{
-    width: 1190px;
+    width: 1200px;
     margin: 0 auto;
     margin-top: 80px;
     /* background-color: aqua; */
 }
 .hotel #hotel_center .hotel_center_nav{
-    width: 1188px;
+    width: 1198px;
     height: 42px;
     background: #F2C146;
     line-height: 42px;
@@ -48,7 +48,7 @@ ul{
 }
 
 .hotel #hotel_center .hotel_center_body .hotellist{
-    width: 1188px;
+    width: 1198px;
     border: 1px solid #F2C146;
     height: 670px;
     /* display: flex; */

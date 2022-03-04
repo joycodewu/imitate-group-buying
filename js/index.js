@@ -1,4 +1,5 @@
 window.onload=function(){
+    // 顶栏模块
     var dropright=document.getElementById("dropright");
     var droprightLi=dropright.getElementsByTagName("li");
 //    console.log(dropright);
@@ -18,6 +19,7 @@ window.onload=function(){
     var dropdownLi=dropdown.getElementsByTagName("li");
     // console.log(dropdown);
     // console.log(dropdownLi);
+    // 侧栏模块
     for(let i=0;i<dropdownLi.length;i++){
         // 因为2,3,4没有效果所以不添加
         if(i>0&&i<4) continue;
