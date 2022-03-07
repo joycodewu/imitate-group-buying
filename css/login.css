@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+input{
+    background: none;
+    outline: none;
+    border: 0px;
+}
 a{
     text-decoration: none;
 }
@@ -22,6 +27,7 @@ a{
     left: 5px;
     margin-top:-31px ;
     opacity: 1;
+
 }
 .body{
     height: 450px;
@@ -34,12 +40,12 @@ a{
     position: relative;
 }
 .body .body-center .body-center-left{
-    height: 450px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
     /* background-color: aquamarine; */
-    position: relative;
+    position: absolute;
     /* text-align: center; */
-    float: left;
+    left: 150px;
 }
 .body .body-center .body-center-left img{
     height: 95%;
