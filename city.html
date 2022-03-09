@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城市列表</title>
+    <link rel="stylesheet" href="./css/nav_right.css" type="text/css">
+    <link rel="stylesheet" href="./css/header copy.css">
+    <link rel="stylesheet" href="./css/city.css">
+</head>
+<body>
+        <!-- 顶部导航栏 -->
+        <div class="nav">
+            <div class="nav-center">
+                <!-- 顶部导航栏左侧 -->
+                <div class="nav-center-left">
+                    <span class="icon-location">
+                        <a href="">北京</a>
+                        <a href="">切换城市</a>
+                        <a href="">[门头沟区]</a>
+                        <a href="./login.html">立即登录</a>
+                        <a href="./register.html">注册</a>
+                    </span>
+                </div>
+                <!-- 顶部导航栏右侧 -->
+                <div class="nav-center-right">
+                    <ul id="dropdown">
+                        <!-- 到时候就在li级别上增加一个show的类名 -->
+                        <li>
+                            <a href="">网站导航</a>
+                            <div class="displaynone">
+                                <dl>
+                                    <dt>酒店旅游</dt>
+                                        <dd><a href="">国际机票</a></dd>
+                                        <dd><a href="">火车票</a></dd>
+                                        <dd><a href="">民宿</a></dd>
+                                        <dd><a href="">经济型酒店</a></dd>
+                                        <dd><a href="">主题酒店</a></dd>
+                                        <dd><a href="">商务酒店</a></dd>
+                                        <dd><a href="">公寓</a></dd>
+                                        <dd><a href="">豪华酒店</a></dd>
+                                        <dd><a href="">客栈</a></dd>
+                                        <dd><a href="">青年旅社</a></dd>
+                                        <dd><a href="">度假酒店</a></dd>
+                                        <dd><a href="">别墅</a></dd>
+                                        <dd><a href="">农家乐</a></dd>
+                                    </dt>
+                                </dl>  
+                                <dl>
+                                    <dt>吃美食</dt>
+                                        <dd><a href="">烤鱼</a></dd>
+                                        <dd><a href="">特色小吃</a></dd>
+                                        <dd><a href="">烧烤</a></dd>
+                                        <dd><a href="">火锅</a></dd>
+                                        <dd><a href="">自助餐</a></dd>
+                                        <dd><a href="">代金券</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>手机app</dt>
+                                        <dd><a href=""><img src="https://s0.meituan.net/bs/fe-web-meituan/2d53095/img/appicons/meituan.png" alt=""></a></dd>
+                                        <dd><a href=""><img src="https://s1.meituan.net/bs/fe-web-meituan/404d350/img/appicons/waimai.png" alt=""></a></dd>
+                                        <dd><a href=""><img src="https://p0.meituan.net/travelcube/162c3308d9622f6d9cfaa49e60be4dca8573.png" alt=""></a></dd>
+                                        <dd><a href=""><img src="https://s1.meituan.net/bs/fe-web-meituan/404d350/img/appicons/dianping.png" alt=""></a></dd>
+                                        <dd><a href=""><img src="https://s1.meituan.net/bs/fe-web-meituan/404d350/img/appicons/maoyan.png" alt=""></a></dd>
+                                </dl>                         
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">手机app</a>
+                        </li>
+                        <li>
+                            <a href="">商家中心</a>
+                        </li>
+                        <li>
+                            <a href="">美团规则</a>
+                        </li>
+                        <li>
+                            <a href="">我的美团</a>
+                            <dl class="displaynone">
+                                <dd><a href="">我的订单</a></dd>
+                                <dd><a href="">我的收藏</a></dd>
+                                <dd><a href="">抵用券</a></dd>
+                                <dd><a href="">账户设置</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 头部，包括ui搜索框等等 -->
+        <div class="header_area">
+            <div class="header">
+                <div class="head_left">
+                    <h1>
+                        <a href="#">
+                            <img src="./images/tuantuan.png" alt="">
+                        </a>    
+                    </h1>
+                </div>
+                <div class="search">
+                    <input type="text" value="搜索商家或地点">
+                    <button>
+                        <span>搜索</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 三级列表总区域 -->
+        <div class="city">
+            <!-- 总表格区域 -->
+            <div class="city_center">
+                <!-- 三级联动第一种 -->
+                    <div class="citylist_1">
+                        <p>省市区三级联动第一种</p>
+                        <div>
+                            <form action="#">
+                                <label for="addr-show">
+                                    您的选择是：
+                                    <input type="text" id="addr-show" value="">
+                                    <!-- input的value如果不为空，其输入后会立刻刷新 -->
+                                </label>
+                                <select id="prov" onchange="showCity(this)">
+                                    <option value="">请选择省份</option>
+                                </select>
+                                <select id="city" onchange="showCountry(this)">
+                                    <option value="">请选择城市</option>
+                                </select>
+                                <select id="country" onchange="selectCountry(this)">
+                                    <option value="">请选择县区</option>
+                                </select>
+                                <button class="confirm" onClick="showaddr()">确定</button>
+                                <button>提交</button>
+                            </form>
+                        </div>
+                    </div>
+                <!-- 三级联动第二种 -->
+                    <div class="citylist_2">
+                        <p>省市区三级联动第二种</p>
+                        <div>
+                            <label for="addr-show02">
+                                您的选择是：
+                                <input type="text" id="addr-show02">
+                            </label>
+                            <button class="confirm" >确定</button>
+                        </div>
+                        <!-- 省份城市选择区域 -->
+                        <div class="area_select">
+                            <ul id="title-wrap">
+                                <li>省份</li>
+                                <li>城市</li>
+                                <li>县区</li>
+                            </ul>
+                            <div class="showpanel">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                <!-- 三级联动第三种 -->
+                    <div class="citylist_3">
+                        <p>省市区三级联动第三种</p>
+                        <div>
+                            您的选择是：<input type="text">
+                        </div>
+                        <div class="area_show">
+                            <ul id="font_index">
+                                <li>热门</li>
+                                <li>ABCD</li>
+                                <li>EFGH</li>
+                                <li>JKLM</li>
+                                <li>NPQR</li>
+                                <li>STWX</li>
+                                <li>YZ</li>
+                            </ul>
+                            <div class="data_show"></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+</body>
+<script src="./js/city.js"></script>
+<script src="./js/city_method01.js"></script>
+<!-- <script src="./js/index.js"></script> -->
+</html>

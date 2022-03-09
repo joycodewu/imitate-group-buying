@@ -1,0 +1,140 @@
+.city {
+    width: 100%;
+    height: 900px;
+    margin-top: 30px;
+}
+
+.city .city_center {
+    margin: 0 auto;
+    width: 1192px;
+    border: 1px solid #ccc;
+}
+
+.city .city_center .citylist_1 {
+    height: 100px;
+    width: 1150px;
+    color: #333;
+    font-weight: 500;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+.city .city_center .citylist_1 div {
+    width: 1190px;
+    height: 35px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.city .city_center .citylist_1 div #addr-show {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.city .city_center .citylist_1 div select {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #333;
+}
+
+.city .city_center .citylist_1 div button {
+    width: 80px;
+    height: 30px;
+    border: 2px solid #a5d2a5;
+    margin: 0 20PX;
+    background-color: transparent;
+}
+
+.city .city_center .citylist_2 {
+    width: 1150px;
+    color: #333;
+    font-weight: 500;
+    margin: 20px;
+    border: 1px solid #ccc;
+    height: 330px;
+}
+
+.city .city_center .citylist_2 div {
+    width: 1190px;
+    height: 35px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.city .city_center .citylist_2 div input {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.city .city_center .citylist_2 div button {
+    width: 80px;
+    height: 30px;
+    border: 2px solid #a5d2a5;
+    margin: 0 20PX;
+    background-color: transparent;
+}
+
+.city .city_center .citylist_2 .area_select {
+    padding: 10px 0;
+    width: 1150px;
+    height: 55px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.city .city_center .citylist_2 .area_select ul li {
+    width: 163px;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.city .city_center .citylist_3 {
+    width: 1150px;
+    color: #333;
+    font-weight: 500;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border: 0;
+    height: 300px;
+}
+
+.city .city_center .citylist_3 div {
+    width: 1190px;
+    height: 35px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.city .city_center .citylist_3 div input {
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.city .city_center .citylist_3 .area_show {
+    height: 70px;
+    width: 1150px;
+    border: 1px solid #ccc;
+}
+
+.city .city_center .citylist_3 .area_show ul {
+    height: 30px;
+    background-color: pink;
+}
+
+.city .city_center .citylist_3 .area_show ul li {
+    display: inline-block;
+    text-align: center;
+    width: 67px;
+    font-size: 14px;
+    line-height: 31px;
+    cursor: default;
+}
+
+/*# sourceMappingURL=city.css.map */
