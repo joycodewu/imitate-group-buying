@@ -21,9 +21,27 @@
             <!-- 顶部导航栏左侧 -->
             <div class="nav-center-left">
                 <span class="icon-location">
-                    <a href="">杭州</a>
-                    <a href="">切换城市</a>
-                    <a href="">[门头沟区]</a>
+                    <a href="">
+                        <script>
+                            if(GetQueryString("city")==null){
+                                document.write("北京");
+                            }else{
+                                var citysub = GetQueryString("city").substr(0,2);
+                                document.write(citysub);
+                            }
+                            // console.dir('city');
+                         </script>
+                    </a>
+                    <a href="./city.html">切换城市</a>
+                    <a href="">
+                        <script>
+                            if(GetQueryString("city")==null){
+                                document.write("[门头沟区 大厂回族 自治县廊坊]");
+                            }else{
+                                document.write(GetQueryString("city"))
+                            }
+                        </script>
+                    </a>
                     <a href="./login.html">立即登录</a>
                     <a href="./register.html">注册</a>
                 </span>
