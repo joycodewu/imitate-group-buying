@@ -4,6 +4,7 @@ var prov=document.getElementById("prov");
 var city=document.getElementById("city");
 var country=document.getElementById("country");
 var btn=document.getElementsByClassName("confirm")[0];
+var onload=document.getElementById("onload");
 console.dir(btn)
 
 // 用于保存省市区的对象
@@ -132,3 +133,8 @@ function showaddr(){
     addrShow.value=current.prov+"-"+current.city+"-"+current.country;
 }
 
+onload.onclick=function(){
+    if(addrShow.value!=null){
+        window.location.href="./index.html?city="+ addrShow.value;
+    }
+}
